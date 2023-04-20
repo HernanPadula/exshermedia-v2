@@ -1,0 +1,257 @@
+.titulos-novedades {
+    font-size: 2vw;
+    color: $titulos-novedades;
+    text-align: center;
+    padding-bottom: 3%;
+    padding-top: 2%;
+}
+
+.articulo-nuevos a {
+    text-decoration: none;
+    color: $letras-cards-nov;
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.articulo-nuevos img {
+    width: 20vw;
+    height: 35vh;
+    border-radius: 10%;
+    margin: 5%;
+    object-fit: cover;
+}
+.articulo-nuevos {
+    background-color: $background-cards-novedades;
+    width: 27vw;
+    height: 60vh;
+    border-radius: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.boton-ver-mas {
+    background-color: $background-boton-ver-mas;
+    width: 10vw;
+    height: 5vh;
+    text-align: center;
+    border-radius: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.boton-ver-mas a {
+    color: $letras-boton-ver-mas;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.grids-novedades-container {
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10vh 70vh 10vh 10vh 70vh 10vh 10vh 70vh 10vh;
+    grid-template-columns: 33vw 33vw 33vw; 
+    grid-template-areas:
+    ". titulo-1 ."
+    "articulos-juegos-1 articulos-juegos-2 articulos-juegos-3"
+    ". boton-1 ."
+    ". titulo-2 ."
+    "articulos-series-1 articulos-series-2 articulos-series-3"
+    ". boton-2 ."
+    ". titulo-3 ."
+    "articulos-peliculas-1 articulos-peliculas-2 articulos-peliculas-3"
+    ". boton-3 ."
+    ;
+    justify-items: center;
+    align-items: center;
+}
+
+@media (max-width:1024px) {
+    .articulo-nuevos img {
+        width: 25vw;
+        height: 33vh;
+        margin: 8%;
+    }
+    .articulo-nuevos {
+        width: 30vw;
+        height: 50vh;
+    } 
+    .grids-novedades-container {
+        grid-template-rows: 10vh 60vh 10vh 10vh 60vh 10vh 10vh 60vh 10vh;
+    }
+    .titulos-novedades {
+        font-size: 3vw;
+    }
+    .titulos {
+        font-size: 4vw;
+    }
+    .boton-ver-mas a {
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width:768px) {
+    .articulo-nuevos img {
+        width: 25vw;
+        height: 27vh;
+    }
+    .articulo-nuevos {
+        width: 30vw;
+        height: 40vh;
+    } 
+    .grids-novedades-container {
+        grid-template-rows: 8vh 45vh 8vh 8vh 45vh 8vh 8vh 45vh 8vh;
+    }
+    .titulos {
+        font-size: 4.5vw;
+    }
+    .boton-ver-mas a {
+        font-size: 1.4vw;
+    }
+}
+
+@media (max-width:425px){
+    .articulo-nuevos img {
+        height: 15vh;
+    }
+    .articulo-nuevos {
+        height: 22vh;
+    } 
+    .grids-novedades-container {
+        grid-template-rows: 7vh 25vh 7vh 7vh 25vh 7vh 7vh 25vh 7vh;
+    }
+    .boton-ver-mas {
+        width: 12vw;
+        height: 3vh;
+    }
+    
+    .boton-ver-mas a {
+        font-size: 1.7vw;
+    }
+    .titulos-novedades {
+        font-size: 3.5vw;
+    }
+    .titulos {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width:375px){
+    .articulo-nuevos img {
+        height: 13vh;
+    }
+    .articulo-nuevos {
+        height: 19vh;
+    } 
+    .grids-novedades-container {
+        grid-template-rows: 7vh 22vh 7vh 7vh 22vh 7vh 7vh 22vh 7vh;
+    }
+    .boton-ver-mas {
+        width: 13vw;
+        height: 3vh;
+    }
+    
+    .boton-ver-mas a {
+        font-size: 1.9vw;
+    }
+    .titulos-novedades {
+        font-size: 4.5vw;
+    }
+    .titulos {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width:320px){
+    .articulo-nuevos img {
+        height: 11vh;
+    }
+    .articulo-nuevos {
+        height: 17vh;
+    } 
+    .grids-novedades-container {
+        grid-template-rows: 8vh 19vh 5vh 8vh 19vh 5vh 8vh 19vh 5vh;
+    }
+    .boton-ver-mas {
+        width: 14vw;
+    }
+    
+    .boton-ver-mas a {
+        font-size: 2vw;
+    }
+    .titulos-novedades {
+        font-size: 5vw;
+    }
+    .titulos {
+        font-size: 8vw;
+    }
+}
+
+.titulo-1 {
+    grid-area: titulo-1;
+}
+
+.titulo-2 {
+    grid-area: titulo-2;
+}
+
+.titulo-3 {
+    grid-area: titulo-3;
+}
+
+.articulos-juegos-1 {
+    grid-area: articulos-juegos-1;
+}
+
+.articulos-juegos-2 {
+    grid-area: articulos-juegos-2;
+}
+
+.articulos-juegos-3 {
+    grid-area: articulos-juegos-3;
+}
+
+.articulos-series-1 {
+    grid-area: articulos-series-1;
+}
+
+.articulos-series-2 {
+    grid-area: articulos-series-2;
+}
+
+.articulos-series-3 {
+    grid-area: articulos-series-3;
+}
+
+.articulos-peliculas-1 {
+    grid-area: articulos-peliculas-1;
+}
+
+.articulos-peliculas-2 {
+    grid-area: articulos-peliculas-2;
+}
+
+.articulos-peliculas-3 {
+    grid-area: articulos-peliculas-3;
+}
+
+.boton-1 {
+    grid-area: boton-1;
+}
+
+.boton-2 {
+    grid-area: boton-2;
+}
+
+.boton-3 {
+    grid-area: boton-3;
+}

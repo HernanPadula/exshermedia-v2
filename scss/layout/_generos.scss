@@ -1,0 +1,61 @@
+.subtitulos-generos h2 {
+    color: $titulos-generos;
+    font-size: 6vh;
+    margin-bottom: 3vh;
+}
+
+.lista-generos {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;
+    list-style: none;
+}
+
+.lista-generos li a {
+    text-decoration: none;
+    color: $generos;
+    font-size: 5vh;
+    text-align: center;
+}
+
+.caja-lista-generos-juegos {
+    background-image: url(../assets/juegos-generos.jpg);
+    background-size: cover;
+    text-align: center;
+    border-radius: 20%;
+    width: 30vw;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.caja-lista-generos-series {
+    background-image: url(../assets/series-generos.jpg);
+    background-size: cover;
+    text-align: center;
+    border-radius: 20%;
+    width: 30vw;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.caja-lista-generos-peliculas {
+    background-image: url(../assets/peliculas-generos.jpg);
+    background-size: cover;
+    text-align: center;
+    border-radius: 20%;
+    width: 30vw;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.lista-container {
+    background-color: $background-generos;
+    width: 30vw;
+    height: 70vh;
+    backdrop-filter: blur(5px);
+}
+
+.generos-container{
+    display: flex;
+    justify-content: space-around;
+}

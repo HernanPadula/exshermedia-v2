@@ -1,0 +1,35 @@
+.footer-flex {
+    background-color: $background-head-foot;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.footer-flex a img {
+    width: 5vw;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media (max-width:768px) {
+    .footer-flex a img {
+        width: 8vw;
+    }
+}
+
+@media (max-width:425px) {
+    .footer-flex a img {
+        width: 15vw;
+    }
+}
+
+@media (max-width:320px) {
+    .footer-flex a img {
+        width: 17vw;
+    }
+}

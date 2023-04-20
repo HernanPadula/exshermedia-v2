@@ -1,0 +1,598 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Poppins', sans-serif; }
+
+body {
+  background-color: #D9FFE7; }
+
+header {
+  background-color: #30B294;
+  width: 100vw;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.nav-bar li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1vw;
+  display: flex;
+  flex-direction: row; }
+
+.nav-bar li {
+  list-style: none;
+  margin: 5% 10% 5% 10%; }
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap; }
+
+.logo-derecha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 1%; }
+
+.logo-derecha img {
+  width: 3vw; }
+
+.logo-izquierda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1%; }
+
+.logo-izquierda img {
+  width: 2vw; }
+
+@media (max-width: 1024px) {
+  .nav-bar li a {
+    font-size: 1.4vw; }
+  .logo-derecha {
+    padding-right: 20px;
+    padding-top: 5px; }
+  .logo-derecha img {
+    width: 2.5vw; }
+  .logo-izquierda {
+    padding-left: 15px; }
+  .logo-izquierda img {
+    width: 2.5vw; } }
+
+@media (max-width: 600px) {
+  .nav-bar li {
+    margin: 5% 5% 5% 5%; }
+  .nav-bar li a {
+    font-size: 2vw; }
+  .logo-derecha img {
+    width: 3vw; }
+  .logo-izquierda img {
+    width: 3vw; } }
+
+@media (max-width: 425px) {
+  header {
+    height: 15vh; }
+  .nav-bar {
+    flex-direction: column;
+    align-items: center; }
+  .nav-bar li {
+    margin: 5% 5% 5% 5%; }
+  .nav-bar li a {
+    font-size: 2vw; }
+  .logo-derecha img {
+    width: 6vw; }
+  .logo-izquierda img {
+    width: 6vw; } }
+
+@media (max-width: 375px) {
+  header {
+    height: 19vh; }
+  .nav-bar li {
+    margin: 10% 5% 10% 5%; }
+  .nav-bar li a {
+    font-size: 2.5vw; }
+  .logo-derecha img {
+    width: 8vw; }
+  .logo-izquierda img {
+    width: 8vw; } }
+
+@media (max-width: 320px) {
+  header {
+    height: 21vh; }
+  .nav-bar li {
+    margin: 10% 5% 10% 5%; }
+  .nav-bar li a {
+    font-size: 3vw; }
+  .logo-derecha img {
+    width: 9vw; }
+  .logo-izquierda img {
+    width: 9vw; } }
+
+.footer-flex {
+  background-color: #30B294;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%; }
+
+.footer-flex a img {
+  width: 5vw;
+  padding-left: 20%;
+  padding-right: 20%; }
+
+@media (max-width: 768px) {
+  .footer-flex a img {
+    width: 8vw; } }
+
+@media (max-width: 425px) {
+  .footer-flex a img {
+    width: 15vw; } }
+
+@media (max-width: 320px) {
+  .footer-flex a img {
+    width: 17vw; } }
+
+.titulos {
+  font-size: 3vw;
+  color: #209378;
+  text-align: center;
+  padding: 2%; }
+
+.articulo-inicio {
+  position: relative;
+  text-align: center; }
+
+.articulo-inicio img {
+  width: 100vw;
+  height: 70vh;
+  object-fit: cover; }
+
+.texto-articulo-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.2vw;
+  background-color: #00000049;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100vw;
+  height: 20vh;
+  backdrop-filter: blur(10px);
+  padding-left: 2%;
+  padding-right: 2%; }
+
+.articulo-chiquito-inicio {
+  background-color: #ffffff;
+  width: 40vw;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  margin: 2%; }
+
+.articulo-chiquito-inicio img {
+  border-radius: 10%;
+  width: 35vw;
+  height: 40vh;
+  margin: 2%;
+  object-fit: cover; }
+
+.texto-articulo-chiquito {
+  display: flex;
+  flex-direction: column;
+  font-size: 1vw;
+  color: #000000; }
+
+.fila-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.fila-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.articulo-chiquito-inicio div {
+  text-align: center;
+  margin: 5%; }
+
+@media (max-width: 1024px) {
+  .texto-articulo-inicio {
+    font-size: 1.1vw; }
+  .texto-articulo-chiquito {
+    font-size: 1.1vw; } }
+
+@media (max-width: 768px) {
+  .articulo-inicio img {
+    height: 60vh; }
+  .fila-1 {
+    flex-direction: column;
+    align-items: center; }
+  .fila-2 {
+    flex-direction: column;
+    align-items: center; }
+  .articulo-chiquito-inicio {
+    width: 70vw; }
+  .articulo-chiquito-inicio img {
+    border-radius: 10%;
+    width: 60vw;
+    height: 50vh; }
+  .texto-articulo-inicio {
+    font-size: 1.5vw; }
+  .texto-articulo-chiquito {
+    font-size: 1.5vw; } }
+
+@media (max-width: 425px) {
+  .articulo-inicio img {
+    height: 50vh; }
+  .articulo-chiquito-inicio {
+    width: 90vw; }
+  .articulo-chiquito-inicio img {
+    border-radius: 10%;
+    width: 80vw;
+    height: 40vh; }
+  .texto-articulo-inicio {
+    font-size: 2vw;
+    height: 15vh; }
+  .texto-articulo-chiquito {
+    font-size: 2vw; } }
+
+@media (max-width: 320px) {
+  .articulo-inicio img {
+    height: 60vh; }
+  .articulo-chiquito-inicio {
+    width: 95vw; }
+  .articulo-chiquito-inicio img {
+    border-radius: 10%;
+    width: 85vw;
+    height: 35vh; }
+  .texto-articulo-inicio {
+    font-size: 3vw;
+    height: 20vh; }
+  .texto-articulo-chiquito {
+    font-size: 3vw; } }
+
+.titulos-novedades {
+  font-size: 2vw;
+  color: #209378;
+  text-align: center;
+  padding-bottom: 3%;
+  padding-top: 2%; }
+
+.articulo-nuevos a {
+  text-decoration: none;
+  color: #19705C;
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 10%; }
+
+.articulo-nuevos img {
+  width: 20vw;
+  height: 35vh;
+  border-radius: 10%;
+  margin: 5%;
+  object-fit: cover; }
+
+.articulo-nuevos {
+  background-color: #ffffff;
+  width: 27vw;
+  height: 60vh;
+  border-radius: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center; }
+
+.boton-ver-mas {
+  background-color: #19705B;
+  width: 10vw;
+  height: 5vh;
+  text-align: center;
+  border-radius: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%; }
+
+.boton-ver-mas a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1vw; }
+
+.grids-novedades-container {
+  width: 100vw;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 10vh 70vh 10vh 10vh 70vh 10vh 10vh 70vh 10vh;
+  grid-template-columns: 33vw 33vw 33vw;
+  grid-template-areas: ". titulo-1 ." "articulos-juegos-1 articulos-juegos-2 articulos-juegos-3" ". boton-1 ." ". titulo-2 ." "articulos-series-1 articulos-series-2 articulos-series-3" ". boton-2 ." ". titulo-3 ." "articulos-peliculas-1 articulos-peliculas-2 articulos-peliculas-3" ". boton-3 .";
+  justify-items: center;
+  align-items: center; }
+
+@media (max-width: 1024px) {
+  .articulo-nuevos img {
+    width: 25vw;
+    height: 33vh;
+    margin: 8%; }
+  .articulo-nuevos {
+    width: 30vw;
+    height: 50vh; }
+  .grids-novedades-container {
+    grid-template-rows: 10vh 60vh 10vh 10vh 60vh 10vh 10vh 60vh 10vh; }
+  .titulos-novedades {
+    font-size: 3vw; }
+  .titulos {
+    font-size: 4vw; }
+  .boton-ver-mas a {
+    font-size: 1.2vw; } }
+
+@media (max-width: 768px) {
+  .articulo-nuevos img {
+    width: 25vw;
+    height: 27vh; }
+  .articulo-nuevos {
+    width: 30vw;
+    height: 40vh; }
+  .grids-novedades-container {
+    grid-template-rows: 8vh 45vh 8vh 8vh 45vh 8vh 8vh 45vh 8vh; }
+  .titulos {
+    font-size: 4.5vw; }
+  .boton-ver-mas a {
+    font-size: 1.4vw; } }
+
+@media (max-width: 425px) {
+  .articulo-nuevos img {
+    height: 15vh; }
+  .articulo-nuevos {
+    height: 22vh; }
+  .grids-novedades-container {
+    grid-template-rows: 7vh 25vh 7vh 7vh 25vh 7vh 7vh 25vh 7vh; }
+  .boton-ver-mas {
+    width: 12vw;
+    height: 3vh; }
+  .boton-ver-mas a {
+    font-size: 1.7vw; }
+  .titulos-novedades {
+    font-size: 3.5vw; }
+  .titulos {
+    font-size: 5vw; } }
+
+@media (max-width: 375px) {
+  .articulo-nuevos img {
+    height: 13vh; }
+  .articulo-nuevos {
+    height: 19vh; }
+  .grids-novedades-container {
+    grid-template-rows: 7vh 22vh 7vh 7vh 22vh 7vh 7vh 22vh 7vh; }
+  .boton-ver-mas {
+    width: 13vw;
+    height: 3vh; }
+  .boton-ver-mas a {
+    font-size: 1.9vw; }
+  .titulos-novedades {
+    font-size: 4.5vw; }
+  .titulos {
+    font-size: 7vw; } }
+
+@media (max-width: 320px) {
+  .articulo-nuevos img {
+    height: 11vh; }
+  .articulo-nuevos {
+    height: 17vh; }
+  .grids-novedades-container {
+    grid-template-rows: 8vh 19vh 5vh 8vh 19vh 5vh 8vh 19vh 5vh; }
+  .boton-ver-mas {
+    width: 14vw; }
+  .boton-ver-mas a {
+    font-size: 2vw; }
+  .titulos-novedades {
+    font-size: 5vw; }
+  .titulos {
+    font-size: 8vw; } }
+
+.titulo-1 {
+  grid-area: titulo-1; }
+
+.titulo-2 {
+  grid-area: titulo-2; }
+
+.titulo-3 {
+  grid-area: titulo-3; }
+
+.articulos-juegos-1 {
+  grid-area: articulos-juegos-1; }
+
+.articulos-juegos-2 {
+  grid-area: articulos-juegos-2; }
+
+.articulos-juegos-3 {
+  grid-area: articulos-juegos-3; }
+
+.articulos-series-1 {
+  grid-area: articulos-series-1; }
+
+.articulos-series-2 {
+  grid-area: articulos-series-2; }
+
+.articulos-series-3 {
+  grid-area: articulos-series-3; }
+
+.articulos-peliculas-1 {
+  grid-area: articulos-peliculas-1; }
+
+.articulos-peliculas-2 {
+  grid-area: articulos-peliculas-2; }
+
+.articulos-peliculas-3 {
+  grid-area: articulos-peliculas-3; }
+
+.boton-1 {
+  grid-area: boton-1; }
+
+.boton-2 {
+  grid-area: boton-2; }
+
+.boton-3 {
+  grid-area: boton-3; }
+
+.reviews-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.reviews {
+  width: 30vw;
+  height: 80vh;
+  font-size: 5vh;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10%;
+  overflow: hidden; }
+
+.reviews a img {
+  width: 30vw;
+  height: 100%;
+  object-fit: cover; }
+
+.reviews h2 {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  bottom: 18vh;
+  background-color: #00000063;
+  height: 16vh;
+  backdrop-filter: blur(10px); }
+
+@media (max-width: 1024px) {
+  .reviews {
+    border-radius: 60px; } }
+
+@media (max-width: 768px) {
+  .reviews {
+    height: 65vh;
+    font-size: 3.7vh;
+    border-radius: 50px; }
+  .reviews h2 {
+    bottom: 13vh; } }
+
+@media (max-width: 690px) {
+  .reviews-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  .reviews {
+    width: 90vw;
+    height: 25vh;
+    font-size: 4vh;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 25px; }
+  .reviews a img {
+    width: 90vw;
+    height: 90vh;
+    object-fit: cover;
+    top: -1%;
+    position: relative;
+    display: flex;
+    flex-direction: column; }
+  .reviews h2 {
+    display: flex;
+    flex-direction: column;
+    bottom: 73vh;
+    height: 16vh;
+    width: 100%; } }
+
+@media (max-width: 520px) {
+  .reviews a img {
+    top: -10%; } }
+
+@media (max-width: 320px) {
+  .reviews {
+    width: 90vw;
+    height: 22vh;
+    font-size: 3vh; }
+  .reviews h2 {
+    bottom: 74.5vh; } }
+
+.subtitulos-generos h2 {
+  color: #48d1b1;
+  font-size: 6vh;
+  margin-bottom: 3vh; }
+
+.lista-generos {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4vh;
+  list-style: none; }
+
+.lista-generos li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 5vh;
+  text-align: center; }
+
+.caja-lista-generos-juegos {
+  background-image: url(../assets/juegos-generos.jpg);
+  background-size: cover;
+  text-align: center;
+  border-radius: 20%;
+  width: 30vw;
+  height: 70vh;
+  overflow: hidden; }
+
+.caja-lista-generos-series {
+  background-image: url(../assets/series-generos.jpg);
+  background-size: cover;
+  text-align: center;
+  border-radius: 20%;
+  width: 30vw;
+  height: 70vh;
+  overflow: hidden; }
+
+.caja-lista-generos-peliculas {
+  background-image: url(../assets/peliculas-generos.jpg);
+  background-size: cover;
+  text-align: center;
+  border-radius: 20%;
+  width: 30vw;
+  height: 70vh;
+  overflow: hidden; }
+
+.lista-container {
+  background-color: #0000008e;
+  width: 30vw;
+  height: 70vh;
+  backdrop-filter: blur(5px); }
+
+.generos-container {
+  display: flex;
+  justify-content: space-around; }
