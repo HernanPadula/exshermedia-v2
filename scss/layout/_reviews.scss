@@ -9,9 +9,6 @@
 .reviews {
     width: 30vw;
     height: 80vh;
-    font-size: 5vh;
-    text-decoration: none;
-    text-align: center;
     border-radius: 10%;
     overflow: hidden;
 }
@@ -23,12 +20,15 @@
 }
 
 .reviews h2{
+    font-size: 9vh;
+    text-decoration: none;
+    text-align: center;
     color: $titulos-reviews;
     display: flex;
     flex-direction: row;
     justify-content: center;
     position: relative;
-    bottom: 18vh;
+    bottom: 15vh;
     background-color: $background-titulo-reviews;
     height: 16vh;
     backdrop-filter: blur(10px);
@@ -38,15 +38,19 @@
     .reviews {
         border-radius: 60px;
     }
+    .reviews h2 {
+        font-size: 7vh;
+        padding-top: 10px;
+    }
 }
 
 @media (max-width:768px) {
     .reviews {
         height: 65vh;
-        font-size: 3.7vh;
         border-radius: 50px;
     }
     .reviews h2{
+        font-size: 6vh;
         bottom: 13vh;
     }
 }
@@ -96,12 +100,15 @@
 }
 
 @media (max-width:320px) {
+    .reviews a img{
+        top: -15%;}
     .reviews {
         width: 90vw;
-        height: 22vh;
+        height: 25vh;
         font-size: 3vh;
     }
     .reviews h2{
-        bottom: 74.5vh;
+        bottom: 74vh;
+        padding: 10px;
     }
 }

@@ -1,7 +1,7 @@
 .subtitulos-generos h2 {
     color: $titulos-generos;
     font-size: 6vh;
-    margin-bottom: 3vh;
+    padding: 2vh;
 }
 
 .lista-generos {
@@ -9,12 +9,14 @@
     flex-direction: column;
     row-gap: 4vh;
     list-style: none;
+    margin: 0%;
+    padding: 0%;
 }
 
 .lista-generos li a {
     text-decoration: none;
     color: $generos;
-    font-size: 5vh;
+    font-size: 4.5vh;
     text-align: center;
 }
 
@@ -22,7 +24,7 @@
     background-image: url(../assets/juegos-generos.jpg);
     background-size: cover;
     text-align: center;
-    border-radius: 20%;
+    border-radius: 100px;
     width: 30vw;
     height: 70vh;
     overflow: hidden;
@@ -32,7 +34,7 @@
     background-image: url(../assets/series-generos.jpg);
     background-size: cover;
     text-align: center;
-    border-radius: 20%;
+    border-radius: 100px;
     width: 30vw;
     height: 70vh;
     overflow: hidden;
@@ -42,7 +44,7 @@
     background-image: url(../assets/peliculas-generos.jpg);
     background-size: cover;
     text-align: center;
-    border-radius: 20%;
+    border-radius: 100px;
     width: 30vw;
     height: 70vh;
     overflow: hidden;
@@ -51,11 +53,231 @@
 .lista-container {
     background-color: $background-generos;
     width: 30vw;
-    height: 70vh;
+    height: 80vh;
     backdrop-filter: blur(5px);
 }
 
 .generos-container{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+}
+
+@media (max-width:2140px){
+    .lista-generos li a {
+        font-size: 4vh;
+    }
+    .subtitulos-generos h2 {
+        font-size: 5.5vh;
+    }
+    .caja-lista-generos-juegos {
+        height: 65vh;
+    }
+    
+    .caja-lista-generos-series {
+        height: 65vh;
+    }
+    
+    .caja-lista-generos-peliculas {
+        height: 65vh;
+    }
+}
+
+@media (max-width:1850px){
+    .generos-container {
+        margin-bottom: 149px;
+    }
+    .lista-generos li a {
+        font-size: 3.5vh;
+    }
+    .subtitulos-generos h2 {
+        font-size: 5vh;
+    }
+    .caja-lista-generos-juegos {
+        height: 60vh;
+    }
+    
+    .caja-lista-generos-series {
+        height: 60vh;
+    }
+    
+    .caja-lista-generos-peliculas {
+        height: 60vh;
+    }
+}
+
+@media (max-width:1510px){
+    .generos-container {
+        margin-bottom: 100px;
+    }
+    .lista-generos li a {
+        font-size: 3.6vh;
+    }
+    .subtitulos-generos h2 {
+        font-size: 4vh;
+    }
+    .caja-lista-generos-juegos {
+        height: 65vh;
+    }
+    
+    .caja-lista-generos-series {
+        height: 65vh;
+    }
+    
+    .caja-lista-generos-peliculas {
+        height: 65vh;
+    }
+}
+
+@media (max-width:1440px){
+    .generos-container {
+        margin-bottom: 5px;
+    }
+    .lista-generos li a {
+        font-size: 4vh;
+    }
+    .subtitulos-generos h2 {
+        font-size: 5vh;
+        padding-top: 10%;
+    }
+    .caja-lista-generos-juegos {
+        height: 65vh;
+    }
+    
+    .caja-lista-generos-series {
+        height: 65vh;
+    }
+    
+    .caja-lista-generos-peliculas {
+        height: 65vh;
+    }
+}
+
+@media (max-width:768px){
+    .generos-container {
+        margin-bottom: 5px;
+    }
+    .lista-generos li a {
+        font-size: 3.8vh;
+    }
+    .subtitulos-generos h2 {
+        padding-top: 5%;
+        font-size: 4vh;
+    }
+    .caja-lista-generos-juegos {
+        height: 65vh;
+        border-radius: 50px;
+    }
+    
+    .caja-lista-generos-series {
+        height: 65vh;
+        border-radius: 50px;
+    }
+    
+    .caja-lista-generos-peliculas {
+        height: 65vh;
+        border-radius: 50px;
+    }
+}
+
+@media (max-width:640px) {
+    .generos-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .lista-generos li a {
+        font-size: 5vh;
+    }
+    .subtitulos-generos h2 {
+        padding-top: 5%;
+        font-size: 6vh;
+    }
+    .caja-lista-generos-juegos {
+        width: 70vw;
+        height: 70vh;
+        border-radius: 90px;
+        margin: 20px;
+    }
+    
+    .caja-lista-generos-series {
+        width: 70vw;
+        height: 70vh;
+        border-radius: 90px;
+        margin: 20px;
+    }
+    
+    .caja-lista-generos-peliculas {
+        width: 70vw;
+        height: 70vh;
+        border-radius: 90px;
+        margin: 20px;
+    }
+
+    .lista-container {
+        width: 70vw;
+        height: 70vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .caja-lista-generos-juegos {
+        width: 80vw;
+        height: 70vh;
+        border-radius: 90px;
+        margin: 20px;
+    }
+    
+    .caja-lista-generos-series {
+        width: 80vw;
+        height: 70vh;
+        border-radius: 90px;
+        margin: 20px;
+    }
+    
+    .caja-lista-generos-peliculas {
+        width: 80vw;
+        height: 70vh;
+        border-radius: 90px;
+        margin: 20px;
+    }
+
+    .lista-container {
+        width: 80vw;
+        height: 70vh;
+    }
+}
+
+@media (max-width:375px) {
+    .lista-generos li a {
+        font-size: 4vh;
+    }
+    .subtitulos-generos h2 {
+        padding-top: 5%;
+        font-size: 5vh;
+    }
+    .caja-lista-generos-juegos {
+        width: 85vw;
+        height: 60vh;
+        border-radius: 90px;
+        margin: 20px;
+    }
+    
+    .caja-lista-generos-series {
+        width: 85vw;
+        height: 60vh;
+        border-radius: 90px;
+        margin: 20px;
+    }
+    
+    .caja-lista-generos-peliculas {
+        width: 85vw;
+        height: 60vh;
+        border-radius: 90px;
+        margin: 20px;
+    }
+
+    .lista-container {
+        width: 85vw;
+        height: 60vh;
+    }
 }

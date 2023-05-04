@@ -8,110 +8,45 @@
 body {
   background-color: #D9FFE7; }
 
-header {
-  background-color: #30B294;
-  width: 100vw;
-  height: 7vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-.nav-bar li a {
-  text-decoration: none;
+.navbar-nav li a {
   color: #ffffff;
-  font-size: 1vw;
-  display: flex;
-  flex-direction: row; }
+  font-size: 30px;
+  margin: 2vh; }
 
-.nav-bar li {
-  list-style: none;
-  margin: 5% 10% 5% 10%; }
+.navbar-brand img {
+  width: 3vw;
+  margin: 20px; }
 
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: nowrap; }
-
-.logo-derecha {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 1%; }
-
-.logo-derecha img {
-  width: 3vw; }
-
-.logo-izquierda {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 1%; }
-
-.logo-izquierda img {
-  width: 2vw; }
+@media (max-width: 1440px) {
+  .navbar-nav li a {
+    font-size: 20px;
+    margin: 1.5vh; }
+  .navbar-brand img {
+    margin: 10px; } }
 
 @media (max-width: 1024px) {
-  .nav-bar li a {
-    font-size: 1.4vw; }
-  .logo-derecha {
-    padding-right: 20px;
-    padding-top: 5px; }
-  .logo-derecha img {
-    width: 2.5vw; }
-  .logo-izquierda {
-    padding-left: 15px; }
-  .logo-izquierda img {
-    width: 2.5vw; } }
+  .navbar-nav li a {
+    font-size: 17px;
+    margin: 1.5vh; }
+  .navbar-brand img {
+    width: 4vw;
+    margin: 7px; } }
 
-@media (max-width: 600px) {
-  .nav-bar li {
-    margin: 5% 5% 5% 5%; }
-  .nav-bar li a {
-    font-size: 2vw; }
-  .logo-derecha img {
-    width: 3vw; }
-  .logo-izquierda img {
-    width: 3vw; } }
+@media (max-width: 768px) {
+  .navbar-nav li a {
+    font-size: 15px;
+    margin: 1vh; }
+  .navbar-brand img {
+    width: 5vw;
+    margin: 5px; } }
 
 @media (max-width: 425px) {
-  header {
-    height: 15vh; }
-  .nav-bar {
-    flex-direction: column;
-    align-items: center; }
-  .nav-bar li {
-    margin: 5% 5% 5% 5%; }
-  .nav-bar li a {
-    font-size: 2vw; }
-  .logo-derecha img {
-    width: 6vw; }
-  .logo-izquierda img {
-    width: 6vw; } }
-
-@media (max-width: 375px) {
-  header {
-    height: 19vh; }
-  .nav-bar li {
-    margin: 10% 5% 10% 5%; }
-  .nav-bar li a {
-    font-size: 2.5vw; }
-  .logo-derecha img {
-    width: 8vw; }
-  .logo-izquierda img {
-    width: 8vw; } }
-
-@media (max-width: 320px) {
-  header {
-    height: 21vh; }
-  .nav-bar li {
-    margin: 10% 5% 10% 5%; }
-  .nav-bar li a {
-    font-size: 3vw; }
-  .logo-derecha img {
-    width: 9vw; }
-  .logo-izquierda img {
-    width: 9vw; } }
+  .navbar-nav li a {
+    font-size: 15px;
+    margin: 0.1vh; }
+  .navbar-brand img {
+    width: 10vw;
+    margin: 10px; } }
 
 .footer-flex {
   background-color: #30B294;
@@ -165,12 +100,15 @@ header {
   background-color: #00000049;
   text-align: center;
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   width: 100vw;
   height: 20vh;
   backdrop-filter: blur(10px);
   padding-left: 2%;
   padding-right: 2%; }
+
+.texto-articulo-inicio h1 {
+  font-size: 3.5vh; }
 
 .articulo-chiquito-inicio {
   background-color: #ffffff;
@@ -197,6 +135,9 @@ header {
   font-size: 1vw;
   color: #000000; }
 
+.texto-articulo-chiquito h2 {
+  font-size: 3vh; }
+
 .fila-1 {
   display: flex;
   flex-direction: row;
@@ -210,6 +151,14 @@ header {
 .articulo-chiquito-inicio div {
   text-align: center;
   margin: 5%; }
+
+@media (max-width: 1440px) {
+  .texto-articulo-inicio {
+    font-size: 1vw; }
+  .texto-articulo-chiquito {
+    font-size: 1vw; }
+  .texto-articulo-inicio h1 {
+    font-size: 3vh; } }
 
 @media (max-width: 1024px) {
   .texto-articulo-inicio {
@@ -250,7 +199,9 @@ header {
     font-size: 2vw;
     height: 15vh; }
   .texto-articulo-chiquito {
-    font-size: 2vw; } }
+    font-size: 2vw; }
+  .texto-articulo-inicio h1 {
+    font-size: 2vh; } }
 
 @media (max-width: 320px) {
   .articulo-inicio img {
@@ -274,12 +225,15 @@ header {
   padding-bottom: 3%;
   padding-top: 2%; }
 
-.articulo-nuevos a {
+.articulo-nuevos a h3 {
   text-decoration: none;
   color: #19705C;
   font-size: 2vw;
   text-align: center;
   margin-bottom: 10%; }
+
+.articulo-nuevos a {
+  text-decoration: none; }
 
 .articulo-nuevos img {
   width: 20vw;
@@ -464,9 +418,6 @@ header {
 .reviews {
   width: 30vw;
   height: 80vh;
-  font-size: 5vh;
-  text-decoration: none;
-  text-align: center;
   border-radius: 10%;
   overflow: hidden; }
 
@@ -476,26 +427,32 @@ header {
   object-fit: cover; }
 
 .reviews h2 {
+  font-size: 9vh;
+  text-decoration: none;
+  text-align: center;
   color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: center;
   position: relative;
-  bottom: 18vh;
+  bottom: 15vh;
   background-color: #00000063;
   height: 16vh;
   backdrop-filter: blur(10px); }
 
 @media (max-width: 1024px) {
   .reviews {
-    border-radius: 60px; } }
+    border-radius: 60px; }
+  .reviews h2 {
+    font-size: 7vh;
+    padding-top: 10px; } }
 
 @media (max-width: 768px) {
   .reviews {
     height: 65vh;
-    font-size: 3.7vh;
     border-radius: 50px; }
   .reviews h2 {
+    font-size: 6vh;
     bottom: 13vh; } }
 
 @media (max-width: 690px) {
@@ -536,35 +493,40 @@ header {
     top: -10%; } }
 
 @media (max-width: 320px) {
+  .reviews a img {
+    top: -15%; }
   .reviews {
     width: 90vw;
-    height: 22vh;
+    height: 25vh;
     font-size: 3vh; }
   .reviews h2 {
-    bottom: 74.5vh; } }
+    bottom: 74vh;
+    padding: 10px; } }
 
 .subtitulos-generos h2 {
   color: #48d1b1;
   font-size: 6vh;
-  margin-bottom: 3vh; }
+  padding: 2vh; }
 
 .lista-generos {
   display: flex;
   flex-direction: column;
   row-gap: 4vh;
-  list-style: none; }
+  list-style: none;
+  margin: 0%;
+  padding: 0%; }
 
 .lista-generos li a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 5vh;
+  font-size: 4.5vh;
   text-align: center; }
 
 .caja-lista-generos-juegos {
   background-image: url(../assets/juegos-generos.jpg);
   background-size: cover;
   text-align: center;
-  border-radius: 20%;
+  border-radius: 100px;
   width: 30vw;
   height: 70vh;
   overflow: hidden; }
@@ -573,7 +535,7 @@ header {
   background-image: url(../assets/series-generos.jpg);
   background-size: cover;
   text-align: center;
-  border-radius: 20%;
+  border-radius: 100px;
   width: 30vw;
   height: 70vh;
   overflow: hidden; }
@@ -582,7 +544,7 @@ header {
   background-image: url(../assets/peliculas-generos.jpg);
   background-size: cover;
   text-align: center;
-  border-radius: 20%;
+  border-radius: 100px;
   width: 30vw;
   height: 70vh;
   overflow: hidden; }
@@ -590,9 +552,166 @@ header {
 .lista-container {
   background-color: #0000008e;
   width: 30vw;
-  height: 70vh;
+  height: 80vh;
   backdrop-filter: blur(5px); }
 
 .generos-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-around; }
+
+@media (max-width: 2140px) {
+  .lista-generos li a {
+    font-size: 4vh; }
+  .subtitulos-generos h2 {
+    font-size: 5.5vh; }
+  .caja-lista-generos-juegos {
+    height: 65vh; }
+  .caja-lista-generos-series {
+    height: 65vh; }
+  .caja-lista-generos-peliculas {
+    height: 65vh; } }
+
+@media (max-width: 1850px) {
+  .generos-container {
+    margin-bottom: 149px; }
+  .lista-generos li a {
+    font-size: 3.5vh; }
+  .subtitulos-generos h2 {
+    font-size: 5vh; }
+  .caja-lista-generos-juegos {
+    height: 60vh; }
+  .caja-lista-generos-series {
+    height: 60vh; }
+  .caja-lista-generos-peliculas {
+    height: 60vh; } }
+
+@media (max-width: 1510px) {
+  .generos-container {
+    margin-bottom: 100px; }
+  .lista-generos li a {
+    font-size: 3.6vh; }
+  .subtitulos-generos h2 {
+    font-size: 4vh; }
+  .caja-lista-generos-juegos {
+    height: 65vh; }
+  .caja-lista-generos-series {
+    height: 65vh; }
+  .caja-lista-generos-peliculas {
+    height: 65vh; } }
+
+@media (max-width: 1440px) {
+  .generos-container {
+    margin-bottom: 5px; }
+  .lista-generos li a {
+    font-size: 4vh; }
+  .subtitulos-generos h2 {
+    font-size: 5vh;
+    padding-top: 10%; }
+  .caja-lista-generos-juegos {
+    height: 65vh; }
+  .caja-lista-generos-series {
+    height: 65vh; }
+  .caja-lista-generos-peliculas {
+    height: 65vh; } }
+
+@media (max-width: 768px) {
+  .generos-container {
+    margin-bottom: 5px; }
+  .lista-generos li a {
+    font-size: 3.8vh; }
+  .subtitulos-generos h2 {
+    padding-top: 5%;
+    font-size: 4vh; }
+  .caja-lista-generos-juegos {
+    height: 65vh;
+    border-radius: 50px; }
+  .caja-lista-generos-series {
+    height: 65vh;
+    border-radius: 50px; }
+  .caja-lista-generos-peliculas {
+    height: 65vh;
+    border-radius: 50px; } }
+
+@media (max-width: 640px) {
+  .generos-container {
+    flex-direction: column;
+    align-items: center; }
+  .lista-generos li a {
+    font-size: 5vh; }
+  .subtitulos-generos h2 {
+    padding-top: 5%;
+    font-size: 6vh; }
+  .caja-lista-generos-juegos {
+    width: 70vw;
+    height: 70vh;
+    border-radius: 90px;
+    margin: 20px; }
+  .caja-lista-generos-series {
+    width: 70vw;
+    height: 70vh;
+    border-radius: 90px;
+    margin: 20px; }
+  .caja-lista-generos-peliculas {
+    width: 70vw;
+    height: 70vh;
+    border-radius: 90px;
+    margin: 20px; }
+  .lista-container {
+    width: 70vw;
+    height: 70vh; } }
+
+@media (max-width: 500px) {
+  .caja-lista-generos-juegos {
+    width: 80vw;
+    height: 70vh;
+    border-radius: 90px;
+    margin: 20px; }
+  .caja-lista-generos-series {
+    width: 80vw;
+    height: 70vh;
+    border-radius: 90px;
+    margin: 20px; }
+  .caja-lista-generos-peliculas {
+    width: 80vw;
+    height: 70vh;
+    border-radius: 90px;
+    margin: 20px; }
+  .lista-container {
+    width: 80vw;
+    height: 70vh; } }
+
+@media (max-width: 375px) {
+  .lista-generos li a {
+    font-size: 4vh; }
+  .subtitulos-generos h2 {
+    padding-top: 5%;
+    font-size: 5vh; }
+  .caja-lista-generos-juegos {
+    width: 85vw;
+    height: 60vh;
+    border-radius: 90px;
+    margin: 20px; }
+  .caja-lista-generos-series {
+    width: 85vw;
+    height: 60vh;
+    border-radius: 90px;
+    margin: 20px; }
+  .caja-lista-generos-peliculas {
+    width: 85vw;
+    height: 60vh;
+    border-radius: 90px;
+    margin: 20px; }
+  .lista-container {
+    width: 85vw;
+    height: 60vh; } }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  margin-bottom: 15%; }
+
+@media (max-width: 1440px) {
+  .formulario {
+    margin-bottom: 4%; } }

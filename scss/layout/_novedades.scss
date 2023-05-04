@@ -6,12 +6,16 @@
     padding-top: 2%;
 }
 
-.articulo-nuevos a {
+.articulo-nuevos a h3 {
     text-decoration: none;
     color: $letras-cards-nov;
     font-size: 2vw;
     text-align: center;
     margin-bottom: 10%;
+}
+
+.articulo-nuevos a {
+    text-decoration: none;
 }
 
 .articulo-nuevos img {
