@@ -8,8 +8,9 @@ Herramientas utilizadas:
 4.SASS
 5.SEO
 
-5 paginas maquetadas con Flex-Box o GRIDS
-3 paginas full responsive
-1 pagina con Bootstrap aplicado
+5 paginas maquetadas con Flex-Box o GRIDS,
+5 paginas full responsive,
+1 pagina con Bootstrap aplicado,
+ Barra de navegación responsive hecha con boostrap
 
 Todo con SASS aplicado en el proyecto
